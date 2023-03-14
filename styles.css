@@ -556,7 +556,7 @@ header {
 
 #project2 {
   background-image: url(./images/projects/Project2.png);
-  margin-left: 120px;
+  margin-left: 200px;
 }
 
 #project3 {
@@ -565,9 +565,25 @@ header {
 
 #project4 {
   background-image: url(./images/projects/Project4.png);
-  margin-bottom: 70px;
+
+  margin-left: 200px;
  
 }
+#project5 {
+  background-image: url(./images/projects/Project5.png);
+}
+#project6 {
+  background-image: url(./images/projects/Project6.png);
+ 
+  margin-left: 200px;
+ 
+}
+#project7 {
+  background-image: url(./images/projects/Project7.png);
+  margin-bottom: 70px;
+}
+
+
 
 @media (max-width:1270px) {
   .page-header {
@@ -962,7 +978,8 @@ footer {
   .project-container {
     padding: 5px;
     margin: 10px;
-    gap: 60px;
+    gap: 90px;
+    margin-top: 49px;
   }
 
   .project-card {
@@ -974,6 +991,7 @@ footer {
   .project-card {
     background-size: cover;
     background-position: center;
+    position: relative;
   }
 
   .project-content {
@@ -982,25 +1000,37 @@ footer {
     left: 0;
     right: 0;
     top: 0;
+    
   }
 
   .project-content {
-    /* margin-top: -45px; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: absolute;
+   padding:0;
+   padding-top: 0;
+   width: 100%;
+   gap: 2rem;
 
   }
 
-  .project-content-left {
-    left: 0;
-  }
-
+ 
   .project-heading {
+    transform: translateX(-18%);
     font-size: 40px;
-    width: 100%;
+    width: 500px;
+  
+    line-height: 3rem;
   }
-
+  .project-subHeading {
+    width: 500px;
+    transform: translateX(-18%);
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+  }
+  .project-skill {
+    width: 40px;
+    transform: translateX(-199%);
+  }
 
   #project2 {
     margin-left: 0;
@@ -1009,7 +1039,11 @@ footer {
   #project4 {
     margin-left: 0;
   }
-
+  #project6 {
+    margin-left: 0;
+  }
+ 
+ 
   .project-skill-container {
     width: 100%;
 
@@ -1030,6 +1064,30 @@ footer {
 
   .project-card:hover .project-content {
     scale: 0.55;
+  }
+  .project-number {
+    font-size: 80px; 
+  }
+  
+  .project-card:hover .project-number {
+    display: block;
+    /* use any one */
+    opacity: 1;
+  
+  }
+  
+  .project-number-right {
+    right: -13px;
+    top: -32px;
+  
+  }
+  
+  .project-number-left {
+    left: -40px;
+    top: -45px;
+  }
+  .btn-group{
+    margin-top: 3rem;
   }
 
 
